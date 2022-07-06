@@ -142,9 +142,9 @@ async function run(options) {
         outfile: ".elm-pages/compiled-ports/port-data-source.js",
         assetNames: "[name]-[hash]",
         chunkNames: "chunks/[name]-[hash]",
-        outExtension: { ".js": ".js" },
+        format: 'cjs',
         metafile: true,
-        bundle: true,
+        bundle: false,
         watch: false,
         logLevel: "error",
       })
